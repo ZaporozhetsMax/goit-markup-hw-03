@@ -51,6 +51,9 @@ ul {
 }
 
 /*---------------------------- Header portfolio studio----------------------------- */
+.container.container-header {
+  border-bottom: 1px solid #ececec;
+}
 
 header .container {
   display: flex;
@@ -139,6 +142,10 @@ header .container {
 .main-list-btn {
   padding-bottom: 34px;
   display: flex;
+  justify-content: center;
+}
+.main-list-btn > li:nth-child(n + 2) {
+  margin-left: 8px;
 }
 
 .button {
@@ -152,6 +159,7 @@ header .container {
   background: var(--background-btn);
   color: var(--primery-color);
   border: none;
+  padding: 6px 22px;
 }
 
 .button:hover,
@@ -202,6 +210,21 @@ header .container {
 /*---фото и текст портфоліо--- */
 .main-list {
   list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+
+  /* gap: 30px; */
+
+  /* align-content: stretch; */
+}
+/* .main-list > li:nth-child(3n + 1) {
+  margin-left: 0px;
+} */
+/* .main-link {
+  flex-basis: calc((100%-60px) / 3);
+} */
+.main-link.img {
+  margin-right: 0;
 }
 
 /* .main-link{display: block;} */
