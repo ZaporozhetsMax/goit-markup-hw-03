@@ -138,6 +138,7 @@ header .container {
 /*---кнопки фільтра портфоліо--- */
 .main-list-btn {
   padding-bottom: 34px;
+  display: flex;
 }
 
 .button {
