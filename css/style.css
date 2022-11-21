@@ -14,6 +14,9 @@
 body {
   font-family: 'Roboto', 'Raleway', sans-serif;
   color: var(--primery-color);
+  /* width: 1600px;
+  height: 1880px;
+  background: #ffffff; */
 }
 
 p,
@@ -52,9 +55,11 @@ ul {
 
 /*---------------------------- Header portfolio studio----------------------------- */
 .container.container-header {
+  /* border-bottom: 1px solid #ececec; */
+}
+header {
   border-bottom: 1px solid #ececec;
 }
-
 header .container {
   display: flex;
   align-items: center;
@@ -175,14 +180,22 @@ header .container {
 }
 /* Секція ефективні рішення стуія */
 .solution {
-  padding: 200px 0;
+  background-color: var(--footer-backround-color);
+  padding: 200px 0 280px;
 }
+
 .solution-text {
-  padding-bottom: 30px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-btn-accent);
   width: 696px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 30px;
 }
+
 /* ----кнопка студія----- */
 .button-studio {
   display: block;
@@ -196,8 +209,9 @@ header .container {
   letter-spacing: 0.06em;
   color: #ffffff;
   background: #2196f3;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  padding: 10px 32px;
+  border-radius: 4px;
 }
 
 .button-studio:hover,
@@ -205,6 +219,7 @@ header .container {
   color: var(--accent-color);
   background: var(--text-btn-accent);
   cursor: pointer;
+  border-radius: 4px;
 }
 
 /*---фото и текст портфоліо--- */
@@ -250,25 +265,14 @@ header .container {
 
 /* -------Студія------ */
 
-.solution {
-  background-color: var(--footer-backround-color);
-}
-
-.solution-text {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--text-btn-accent);
-}
-
 /* ---переваги студія--- */
 .benefits {
   list-style-type: none;
+  display: flex;
 }
-
+.benefits > li:not(:first-child) {
+  margin-left: 30px;
+}
 .benefits-text {
   font-weight: 700;
   font-size: 14px;
@@ -292,12 +296,16 @@ header .container {
   line-height: 1.17;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
+  text-align: center;
 }
 
 .about-pictures {
   list-style-type: none;
+  display: flex;
 }
-
+.about-pictures > li:not(:first-child) {
+  margin-left: 30px;
+}
 /* -----team studio-------- */
 .text-section {
   margin-bottom: 50px;
@@ -308,6 +316,10 @@ header .container {
 
 .team-foto {
   list-style-type: none;
+  display: flex;
+}
+.team-foto > li:not(:first-child) {
+  margin-left: 30px;
 }
 
 .hero-name {
