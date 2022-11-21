@@ -47,7 +47,7 @@ ul {
   width: 1200px;
   padding: 0px 15px;
   margin: 0px auto;
-  border: 2px solid tomato;
+  /* border: 2px solid tomato; */
 }
 
 /*---------------------------- Header portfolio studio----------------------------- */
@@ -221,7 +221,10 @@ header .container {
 /* .main-list > li:nth-child(3n + 1) {
   margin-left: 0px;
 } */
-.main-link {
+.main-link-title {
+  /* margin: 20px 24px; */
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
 }
 
 .main-link.img {
