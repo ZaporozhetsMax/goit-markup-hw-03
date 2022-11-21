@@ -31,6 +31,8 @@ h6 {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 ul {
@@ -65,7 +67,7 @@ header .container {
   align-items: center;
 }
 /* ---логотип--- */
-.logo {
+.logo-header {
   padding: 25px 0;
   display: block;
 }
@@ -74,7 +76,7 @@ header .container {
   color: var(--logo-web-color);
 }
 
-.logo {
+.logo-header {
   font-family: 'Raleway';
   font-size: 26px;
   line-height: 1.19;
@@ -329,6 +331,7 @@ header .container {
   letter-spacing: 0.03em;
   margin-top: 30px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .hero-position {
@@ -337,11 +340,24 @@ header .container {
   letter-spacing: 0.03em;
   color: var(--second-color);
   margin-bottom: 30px;
+  text-align: center;
 }
 
 /*------------------------- Footer portfolio studio-------------------------*/
 .footer-studio {
   color: var(--text-btn-accent);
+}
+.logo-footer {
+  /* padding: 25px 0; */
+  display: block;
+  font-family: 'Raleway';
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  /* margin-right: 93px; */
+  padding-top: 60px;
 }
 
 footer {
@@ -349,15 +365,16 @@ footer {
   height: 252px; */
   background: var(--footer-backround-color);
   margin: 0 auto;
-  padding: 60px 0;
+  /* padding: 60px 0; */
 }
 
 .footer-adress {
   list-style-type: none;
   margin-top: 20px;
+  padding-bottom: 60px;
 }
 
-.footer-adress-list {
+.footer-adress-list:not(:last-child) {
   margin-bottom: 9px;
 }
 
